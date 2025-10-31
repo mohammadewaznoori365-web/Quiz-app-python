@@ -1,60 +1,80 @@
-# پروژه: quiz_app (برنامه سوال و جواب)
-#ترتیب کننده: محمد عوض,محمد عمر و محمد عبدالله
-#هدف: پرسیدن چند سوال از کاربر و نمایش امتیاز نهایی
-#توضیح:
-#این برنامه شامل پنج سوال چهار گزینه ای است
+# 📝 Project: Quiz App
+# 💻 Language: Python
+# 👨‍💻 Author: Mohammad Ewaz,Mohammad omar,Mohammad Abdullah
+# 🎯 Purpose: Ask the user 5 quiz questions and show the final score
+
+# ---------------------------------------------------------------
+# 🔸 List of questions, options, and correct answers
+questions = [
+    {
+        "question": "1. Who created Python?",
+        "options": [
+            "1. Elon Musk",
+            "2. Guido van Rossum",
+            "3. Bill Gates",
+            "4. Mark Zuckerberg"
+        ],
+        "answer": "2"
+    },
+    {
+        "question": "2. When was Python first released?",
+        "options": [
+            "1. 1989",
+            "2. 1991",
+            "3. 2000",
+            "4. 2010"
+        ],
+        "answer": "2"
+    },
+    {
+        "question": "4. What symbol is used for comments in Python?",
+        "options": [
+            "1. //",
+            "2. <!-- -->",
+            "3. #",
+            "4. /* */"
+        ],
+        "answer": "3"
+    },
+    {
+        "question": "5. Which function is used to print text in Python?",
+        "options": [
+            "1. echo()",
+            "2. print()",
+            "3. printf()",
+            "4. show()"
+        ],
+        "answer": "2"
+    },
+    {
+        "question": "6. Which of the following is NOT a Python data type?",
+        "options": [
+            "1. int",
+            "2. str",
+            "3. bool",
+            "4. real"
+        ],
+        "answer": "4"
+    },
+]
+# ---------------------------------------------------------------
+# 🔸 Initialize score
 score = 0
-print("Please type the number (1-4) of your correct answer.\n")
+# 🔸 Loop through each question
+for q in questions:
+    print(q["question"])
+    for opt in q["options"]:
+        print(opt)
+    user_answer = input("Enter the number of your answer: ")
 
-# Question 1
-print("1. Who created the Python programming language?")
-print("1) Elon Musk")
-print("2) Guido Van Rossum")
-print("3) Bill Gates")
-print("4) Mark Zuckerberg")
-ans = input("Enter your answer (1-4): ")
-if ans == "2":
-    score += 1
+    # Check answer
+    if user_answer == q["answer"]:
+        print("✅ Correct!\n")
+        score += 1
+    else:
+        print(f"❌ Wrong! The correct answer was option {q['answer']}.\n")
 
-# Question 2
-print("\n2. In which year was Python first released?")
-print("1) 1989")
-print("2) 2000")
-print("3) 1991")
-print("4) 2010")
-ans = input("Enter your answer (1-4): ")
-if ans == "3":
-    score += 1
-
-# Question 3
-print("\n3. What symbol is used for writing comments in Python?")
-print("1) //")
-print("2) #")
-print("3) < !-- -->")
-print("4) **")
-ans = input("Enter your answer (1-4): ")
-if ans == "2":
-    score += 1
-
-# Question 4
-print("\n4. Which Python function is used to print text on the screen?")
-print("1) echo()")
-print("2) print()")
-print("3) show()")
-print("4) printf()")
-ans = input("Enter your answer (1-4): ")
-if ans == "2":
-    score += 1
-
-# Question 5
-print("\n5. Which of the following is NOT a Python data type?")
-print("1) int")
-print("2) str")
-print("3) bool")
-print("4) real")
-ans = input("Enter your answer (1-4): ")
-if ans == "4":
-    score += 1
-# نتیجه نهایی
-print("🎯 Quiz Finished!")
-print(f"Your final score is: {score} out of 5")
+# ---------------------------------------------------------------
+# 🔸 Final result
+print("🎉 Quiz Finished!")
+print(f"Your final score: {score} out of {len(questions)}")
