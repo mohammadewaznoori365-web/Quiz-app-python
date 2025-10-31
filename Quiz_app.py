@@ -1,6 +1,6 @@
 # 📝 Project: Quiz App
 # 💻 Language: Python
-# 👨‍💻 Author: Mohammad Ewaz,Mohammad omar,Mohammad Abdullah
+# 👨‍💻 Author: Mohammad Ewaz,Mohammad omar,Mohammad Abdullah،Mohammad latif
 # 🎯 Purpose: Ask the user 5 quiz questions and show the final score
 
 # ---------------------------------------------------------------
