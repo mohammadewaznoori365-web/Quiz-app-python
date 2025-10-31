@@ -27,7 +27,7 @@ questions = [
         "answer": "2"
     },
     {
-        "question": "4. What symbol is used for comments in Python?",
+        "question": "3. What symbol is used for comments in Python?",
         "options": [
             "1. //",
             "2. <!-- -->",
@@ -37,7 +37,7 @@ questions = [
         "answer": "3"
     },
     {
-        "question": "5. Which function is used to print text in Python?",
+        "question": "4. Which function is used to print text in Python?",
         "options": [
             "1. echo()",
             "2. print()",
@@ -47,7 +47,7 @@ questions = [
         "answer": "2"
     },
     {
-        "question": "6. Which of the following is NOT a Python data type?",
+        "question": "5. Which of the following is NOT a Python data type?",
         "options": [
             "1. int",
             "2. str",
