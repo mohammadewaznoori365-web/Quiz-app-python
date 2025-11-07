@@ -2,7 +2,6 @@
 # 💻 Language: Python
 # 👨‍💻 Author: Mohammad Ewaz,Mohammad omar,Mohammad Abdullah،Mohammad latif
 # 🎯 Purpose: Ask the user 5 quiz questions and show the final score
-
 # ---------------------------------------------------------------
 # 🔸 List of questions, options, and correct answers
 questions = [
@@ -73,7 +72,6 @@ for q in questions:
         score += 1
     else:
         print(f"❌ Wrong! The correct answer was option {q['answer']}.\n")
-
 # ---------------------------------------------------------------
 # 🔸 Final result
 print("🎉 Quiz Finished!")
